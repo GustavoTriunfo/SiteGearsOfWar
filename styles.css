@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.logo-gears{
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 300px;
+ height: 74px;
+}
+
+/* Estilo para o menu superior */
+.menu-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    color: white; /* Cor do texto no menu superior */
+    padding: 30px;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+nav ul {
+list-style: none;
+padding: 0; /* Para remover o espaçamento interno padrão */
+}
+
+nav a {
+text-decoration: none; /* Para remover sublinhados padrão dos links */
+color: white; /* Define a cor dos links para branco */
+}
+
+/* Efeito de destaque ao passar o mouse */
+nav li:hover {
+transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+/* Estilo para o menu lateral */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Largura do menu lateral */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    color: white; /* Cor do texto no menu lateral */
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Estilo para a área de conteúdo */
+.conteudo-um {
+    color: #ffffff;
+    position: absolute;
+    top: 60px;
+    margin-left: 250px; /* Deixa espaço para o menu lateral */
+    padding: 20px;
+}
+
+.conteudo-dois {
+    color: #ffffff;
+    position: absolute;
+    top: 960px;
+    margin-left: 350px; /* Deixa espaço para o menu lateral */
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.conteudo-tres {
+    color: #000000;
+    position: absolute;
+    top: 2000px;
+    left: 300px;
+    margin-right: 300px;
+  
+    padding: 20px;
+}
+
+/* Estilo para o rodapé */
+.rodape {
+    position: fixed;
+    font-size: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    color: white; /* Cor do texto no rodapé */
+    padding: 10px;
+    text-align: center;
+}
+
+.home{
+color: #ffffff;
+position: absolute;
+font-size: 25px;
+top: 20px;
+right: 945px;
+}
+
+.mais-informacoes{
+color: #ffffff;
+position: absolute;
+font-size: 25px;
+top: 20px;
+right: 670px;
+}
+
+.cadastro{
+color: #ffffff;
+position: absolute;
+font-size: 25px;
+top: 20px;
+right: 460px;
+}
+
+.login{
+color: #ffffff;
+position: absolute;
+font-size: 25px;
+top: 20px;
+right: 250px;
+}
+
+.wallpaper-conteudo-um{
+background-image: url(imagens/gears1Wallpaper.jpg);
+background-size: cover;
+padding: 500px
+}
+
+.wallpaper-conteudo-dois{
+
+background-image: url(imagens/gears2Wallpaper.jpg);
+background-size: cover;
+padding: 500px
+}
+
+.wallpaper-conteudo-tres{
+
+background-image: url(imagens/gears3Wallpaper.jpg);
+background-size: cover;
+padding: 500px
+}
+
