@@ -6,10 +6,11 @@ body {
 
 .logo-gears{
  position: absolute;
- left: 0px;
+ left: 160px;
  top: 0px;
  width: 300px;
  height: 74px;
+ z-index: 3;
 }
 
 /* Estilo para o menu superior */
@@ -19,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
-    color: white; /* Cor do texto no menu superior */
+    color: rgb(213, 22, 22); /* Cor do texto no menu superior */
     padding: 30px;
     text-align: center;
     z-index: 2;
@@ -41,19 +42,51 @@ nav li:hover {
 transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
 }
 
+nav li:hover {
+    background-color: rgb(213, 22, 22);  /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    }
+
+/* Estilos para o botão "hamburger" */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 3; /* Colocado acima do menu lateral */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(213, 22, 22);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
 /* Estilo para o menu lateral */
 .menu-lateral {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 200px; /* Largura do menu lateral */
+    left: -200px; /* Inicialmente, oculto à esquerda */
+    width: 200px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
-    color: white; /* Cor do texto no menu lateral */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     padding: 20px;
     z-index: 1;
+    transition: 0.4s; /* Adiciona uma transição suave */
 }
 
+/* Quando o menu lateral estiver aberto, ajuste a posição para a esquerda 0 */
+.menu-lateral.open {
+    left: 0;
+}
+
+/* Quando o cursor está sobre o botão "hamburger" */
+.menu-toggle:hover .bar {
+    background-color: white; /* Altera a cor das barras para branco */
+}
 /* Estilo para a área de conteúdo */
 .conteudo-um {
     color: #ffffff;
@@ -95,36 +128,36 @@ transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
     text-align: center;
 }
 
-.home{
+.trailers{
 color: #ffffff;
 position: absolute;
 font-size: 25px;
 top: 20px;
-right: 945px;
+right: 560px;
 }
 
-.mais-informacoes{
+.horde{
 color: #ffffff;
 position: absolute;
 font-size: 25px;
 top: 20px;
-right: 670px;
+right: 450px;
 }
 
-.cadastro{
+.bosses{
 color: #ffffff;
 position: absolute;
 font-size: 25px;
 top: 20px;
-right: 460px;
+right: 330px;
 }
 
-.login{
+.profile{
 color: #ffffff;
 position: absolute;
 font-size: 25px;
 top: 20px;
-right: 250px;
+right: 150px;
 }
 
 .wallpaper-conteudo-um{
